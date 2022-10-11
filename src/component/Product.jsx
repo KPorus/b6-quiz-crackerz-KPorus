@@ -12,11 +12,12 @@ const Product = ({ product}) => {
                 <div className='my-auto font-bold text-2xl font-[Lato] text-slate-800'>
                     <h1>Subject Name: {name}</h1>
                     <h1>Total Quiz: {total}</h1>
+                    <Link to={`/${name}/${id}`}>
                     <button><h1 className='bg-slate-800 text-slate-300 hover:bg-white hover:text-slate-800 ease-in-out p-4 m-4'>
-                        <Link to={`/${name}/${id}`}>
+                        
                         Take a test
-                        </Link>
                         </h1></button>
+                        </Link>
                 </div>
                 
             </div>

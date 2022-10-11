@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
+import Blog from './component/Blog';
 import Chart from './component/Chart';
+
 import ErrorPage from './component/ErrorPage';
 import Home from './component/Home';
 import Question from './component/Question';
@@ -20,6 +21,7 @@ function App() {
     [
     {path:"/",element:<Home></Home>},
     {path:"/Chart",element:<Chart></Chart>},
+    {path:"/Blog",element:<Blog></Blog>},
     {
       path:'/:name/:id',element:<Question></Question>,loader:async({params})=>
       {

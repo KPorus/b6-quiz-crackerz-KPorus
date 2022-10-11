@@ -3,14 +3,14 @@ import Ans from './Ans';
 
 
 const Q2 = ({questions}) => {
-    let {options,question}= questions
+    let {options,question,correctAnswer}= questions
     // console.log(options);
-    console.log(question);
+    // console.log(question);
     return (
         <div className='flex justify-center'>
             <div className='bg-slate-800 mx-4 w-[50%] p-4 m-4 text-slate-200'>
                 {question}
-                {options.map(option => <Ans options={option}></Ans>)}
+                {options.map(option => <Ans options={option} ans = {correctAnswer}></Ans>)}
             </div>
         </div>
     );

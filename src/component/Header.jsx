@@ -16,6 +16,7 @@ const Header = () => {
          <div className={`text-slate-300 sm:block sm:static  absolute ${state ? 'top-16 mb-10 bg-slate-900 flex flex-col z-10 text-center p-4' : 'top-[-100%]'}`}>
          <Link className='pr-7 hover:text-orange-700 ease-in-out duration-300 text-xl font-medium' to='/'>Home</Link>
          <Link className='pr-7 hover:text-orange-700  ease-in-out duration-300 text-xl font-medium' to='/Chart'>Chart</Link>
+         <Link className='pr-7 hover:text-orange-700  ease-in-out duration-300 text-xl font-medium' to='/Blog'>Blog</Link>
          </div>      
 
         <div className='text-2xl text-slate-300 sm:hidden' onClick={()=>navBtn(state)} >
