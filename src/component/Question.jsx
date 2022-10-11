@@ -1,11 +1,19 @@
-import React, { useContext } from 'react';
-import {ProductContext } from '../layout/Main'
+import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import Q2 from './Q2';
+
 const Question = () => {
-    const context = useContext(ProductContext);
-    console.log(context)
+    let data = useLoaderData()
+    console.log(data.data);
+    let {total,questions,name,logo} = data.data
+    console.log(questions);
     return (
-        <div>
-            <h1>This is react</h1>
+        <div className='text-center text-2xl font-[Lato] font-medium'>
+            <img className='w-[21%] m-auto p-4' src={logo} alt=""></img>
+            <h2>{name}total question no: {total}</h2>
+            {
+                questions.map(q => <Q2 questions={q}></Q2>)
+            }
         </div>
     );
 };

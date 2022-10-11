@@ -3,6 +3,7 @@ import {ProductContext } from '../layout/Main'
 import Product from './Product';
 const Home = () => {
     const context = useContext(ProductContext);
+    
     return (
         <div>
             {context.map(product => (

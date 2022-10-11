@@ -18,11 +18,16 @@ function App() {
 
     children:
     [
-    {path:"/",element:<Home></Home>,children:[
-      {path:"/react",element:<Question></Question>}
+    {path:"/",element:<Home></Home>},
+    {path:"/Chart",element:<Chart></Chart>},
+    {
+      path:'/:name/:id',element:<Question></Question>,loader:async({params})=>
+      {
+        return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+      }
+    }
     ]},
-    {path:"/Chart",element:<Chart></Chart>}
-    ]}
+    
   ])
   return (
     <div>

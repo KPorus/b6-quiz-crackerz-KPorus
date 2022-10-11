@@ -5,6 +5,7 @@ import Footer from '../component/Footer';
 import Header from '../component/Header';
 
 export const ProductContext = createContext([])
+
 const Main = () => {
   let {data} = useLoaderData()
     return (

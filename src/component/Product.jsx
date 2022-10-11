@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Product = ({ product}) => {
-    let {name,logo,total} = product
+    let {name,logo,total,id} = product
+
     return (
         <div className='flex flex-row justify-around gap-5'>
             <div className='text-center border sm:flex flex-col gap-4 mt-4 drop-shadow-lg'>
@@ -9,7 +12,11 @@ const Product = ({ product}) => {
                 <div className='my-auto font-bold text-2xl font-[Lato] text-slate-800'>
                     <h1>Subject Name: {name}</h1>
                     <h1>Total Quiz: {total}</h1>
-                    <button><h1 className='bg-slate-800 text-slate-300 hover:bg-white hover:text-slate-800 ease-in-out p-4 m-4'>Take a test</h1></button>
+                    <button><h1 className='bg-slate-800 text-slate-300 hover:bg-white hover:text-slate-800 ease-in-out p-4 m-4'>
+                        <Link to={`/${name}/${id}`}>
+                        Take a test
+                        </Link>
+                        </h1></button>
                 </div>
                 
             </div>
