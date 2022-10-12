@@ -20,7 +20,7 @@ const Q2 = ({questions}) => {
     return (
         <div className='flex justify-center'>
             <div className='bg-slate-800 mx-4 w-[50%] p-4 m-4 text-slate-200'>
-                <div className='flex items-center justify-around'>
+                <div className='flex items-center justify-around sm:text-2xl text-[1.3rem]'>
                     <div>{question}</div>
                     <div onClick={()=>click(state)}><AiFillEye>
                         {/* {

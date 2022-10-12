@@ -7,7 +7,7 @@ const Blog = () => {
           <p className='text-2xl p-2 font-[Lato] font-medium text-slate-600 text-center'>Here is some blog for recent populer question. Enjoy your self. Happy learing.</p>
           <hr className='w-[50%] m-auto mb-3'></hr>
 
-          <div className='m-24'>
+          <div className='sm:m-24 m-[3rem]'>
             <h1 className='text-3xl font-bold font-serif text-center text-slate-700'>* ReactJS | Router</h1>
             <p className='text-slate-700 font-serif'>Routing is a process in which a user is directed to different pages based on their action or request. ReactJS Router is mainly used for developing Single Page Web Applications. React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.
 
@@ -28,7 +28,7 @@ const Blog = () => {
             </p>
           </div>
 
-          <div className='m-24'>
+          <div className='sm:m-24 m-[3rem]'>
             <h1 className='text-3xl font-bold font-serif text-center text-slate-700'>* React Context API: What is it and How it works?</h1>
             <p className='text-slate-700 font-serif'>
             <h1 className='text-xl font-bold font-serif  text-slate-700'>What is Context API?</h1>The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux.
@@ -41,7 +41,7 @@ const Blog = () => {
             </p>
           </div>
 
-          <div className='m-24'>
+          <div className='sm:m-24 m-[3rem]'>
             <h1 className='text-3xl font-bold font-serif text-center text-slate-700'>* useRef</h1>
             <p className='text-slate-700 font-serif'>
             useRef returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). The returned object will persist for the full lifetime of the component.
