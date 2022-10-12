@@ -19,14 +19,14 @@ const ChartHome = () => {
   return (
     <div>
       <h1 className="font-bold text-slate-800 text-center m-5 text-2xl">Chart of total question of various topic.</h1>
-     <PieChart width={1000} height={400}>
+     <PieChart width={800} height={400}>
      <Pie
         dataKey="value"
         isAnimationActive={true}
         data={data01}
-        cx={500}
+        cx={200}
         cy={200}
-        outerRadius={100}
+        outerRadius={80}
         fill="#8884d8"
         label
       />
