@@ -2,7 +2,6 @@ import React from 'react';
 import Swal from 'sweetalert2'
 import { useState } from 'react';
 const Ans = ({options,ans}) => {
-   console.log(options);
     const [state, setstate] = useState(true);
     let ansClick = (state)=>
     {

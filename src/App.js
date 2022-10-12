@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Blog from './component/Blog';
-import Chart from './component/Chart';
+import ChartHome from './component/ChartHome';
 
 import ErrorPage from './component/ErrorPage';
 import Home from './component/Home';
@@ -20,7 +20,7 @@ function App() {
     children:
     [
     {path:"/",element:<Home></Home>},
-    {path:"/Chart",element:<Chart></Chart>},
+    {path:"/Chart",element:<ChartHome></ChartHome>},
     {path:"/Blog",element:<Blog></Blog>},
     {
       path:'/:name/:id',element:<Question></Question>,loader:async({params})=>
