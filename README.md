@@ -1,6 +1,14 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This was a quizz app with react js and tailwind css 
+I use some addition extantion such as 
+1. toast
+2. Sweet-alert2
+
+In this project use can take test on various subject and see the correct answer of the test question.
+They can take those given test as much their need.
+I only take some question to make this quizz web protype project.
 
 ## Available Scripts
 
